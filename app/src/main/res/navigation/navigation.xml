@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/firstFragment">
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="art.tm.parfragnav.FirstFragment"
+        android:label="FirstFragment"
+        tools:layout="@layout/fragment_first">
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment"
+            app:popUpTo="@id/firstFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="art.tm.parfragnav.SecondFragment"
+        android:label="SecondFragment"
+        tools:layout="@layout/fragment_second">
+        <argument
+            android:name="liczba"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="art.tm.parfragnav.AboutFragment"
+        android:label="AboutFragment"
+        tools:layout="@layout/fragment_about"/>
+</navigation>

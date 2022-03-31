@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ParFragNav</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_jeden_fragment">Hello jeden fragment</string>
+    <string name="hello_dwa_fragment">Hello dwa fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">Zenek Puzon made this app\n
+                         ALL RIGHTS IS RESERVED</string>
+</resources>
